@@ -4,10 +4,267 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header class="w-1210 mx-auto mt-[54px] flex h-[50px] justify-between">
+      <div class="flex items-center gap-1">
+        <img src="assets/images/logos/Vector.png" alt="logo" />
+        <h1 class="font-DM-serif-Display text-3xlp text-black-light">
+          SELHONO
+        </h1>
+      </div>
+      <nav class="flex items-center gap-12">
+        <ul class="flex gap-12">
+          <li class="font-Jost text-xl font-medium"><a href="#">Home</a></li>
+          <li class="font-Jost text-xl font-medium"><a href="#">Pages</a></li>
+          <li class="font-Jost text-xl font-medium">
+            <a href="#">Services</a>
+          </li>
+          <li class="font-Jost text-xl font-medium"><a href="#">Project</a></li>
+          <li class="font-Jost text-xl font-medium"><a href="#">Blog</a></li>
+          <li class="font-Jost text-xl font-medium"><a href="#">Contact</a></li>
+        </ul>
+        <div>
+          <img src="assets/images/icons/search.png" alt="search" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="w-1210 relative mx-auto mt-[104px] h-[758px] bg-hero-image">
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 h-[425px] w-full rounded-br-full rounded-tl-[2375px] pl-[25px] pt-[78px]"
+        style="background-color: rgba(0, 0, 0, 0.3)"
+      >
+        <!-- Content -->
+        <h1 class="font-DM-serif-Display text-6xlp text-white">
+          Let's make your
+        </h1>
+        <h1 class="font-DM-serif-Display text-6xlp text-white">
+          home beautiful together
+        </h1>
+        <p class="font-Inter text-xlp font-medium text-white">
+          Explore thousands of design
+        </p>
+        <p class="font-Inter text-xlp font-medium text-white">
+          to design your house
+        </p>
+        <button
+          class="mt-[28px] flex items-center rounded-[18px] bg-orange-light px-[48px] py-[26px] font-Inter text-lg font-semibold text-white"
+        >
+          Get Started
+          <img
+            src="assets/images/icons/arrow.png"
+            alt="image"
+            class="grayscale-100 ml-3 brightness-0 invert filter"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- Our work -->
+    <section class="w-1210 mx-auto mt-24 flex gap-10">
+      <!-- 1 -->
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="font-DM-serif-Display text-2xl">Project Plan</h1>
+        <p
+          class="mt-5 flex flex-wrap justify-center text-center text-xlp text-black-light"
+        >
+          There are many variations of the passages of lorem Ipsum from
+          available, majority.
+        </p>
+
+        <button
+          class="mt-14 flex items-center font-Jost font-semibold text-black-light"
+        >
+          Read More
+          <img src="assets/images/icons/arrow.png" alt="image" class="ml-3" />
+        </button>
+      </div>
+      <!-- 2 -->
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="font-DM-serif-Display text-2xl">Interior Work</h1>
+        <p
+          class="mt-5 flex flex-wrap justify-center text-center text-xlp text-black-light"
+        >
+          There are many variations of the passages of lorem Ipsum from
+          available, majority.
+        </p>
+
+        <button
+          class="mt-14 flex items-center font-Jost font-semibold text-black-light"
+        >
+          Read More
+          <img src="assets/images/icons/arrow.png" alt="image" class="ml-3" />
+        </button>
+      </div>
+      <!-- 3 -->
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="font-DM-serif-Display text-2xl">Realization</h1>
+        <p
+          class="mt-5 flex flex-wrap justify-center text-center text-xlp text-black-light"
+        >
+          There are many variations of the passages of lorem Ipsum from
+          available, majority.
+        </p>
+
+        <button
+          class="mt-14 flex items-center font-Jost font-semibold text-black-light"
+        >
+          Read More
+          <img src="assets/images/icons/arrow.png" alt="image" class="ml-3" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Call us  -->
+    <section class="mx-auto mt-40 flex w-[1210px]">
+      <!-- Left image -->
+      <div class="relative z-10 h-[700px] w-[653px] bg-workFrame1">
+        <div
+          class="absolute inset-0 h-full w-full rounded-tr-[400px] pl-8 pt-36"
+          style="background-color: rgba(0, 0, 0, 0.4)"
+        >
+          <h1 class="font-DM-serif-Display text-5xlp text-white">
+            We create art
+          </h1>
+          <h1 class="font-DM-serif-Display text-5xlp text-white">
+            for Modern life
+          </h1>
+          <p
+            class="mt-5 w-[324px] text-left font-Jost text-xlp font-medium text-white"
+          >
+            There are many variations of the passages of lorem Ipsum from
+            available, majority.
+          </p>
+
+          <!-- call icon -->
+          <div class="mt-5 flex items-center">
+            <div
+              class="grid size-[93px] place-content-center rounded-full bg-white"
+            >
+              <img src="assets/images/icons/Call.svg" alt="" />
+            </div>
+            <div class="ml-4">
+              <h1 class="font-Jost text-2xl font-bold text-white">012345678</h1>
+              <h1 class="font-Jost text-xlp font-medium text-white">
+                Call Us Anytime
+              </h1>
+            </div>
+          </div>
+
+          <!-- button -->
+          <button
+            class="mt-12 flex items-center rounded-[18px] bg-orange-light px-[48px] py-[26px] font-Inter text-lg font-semibold text-white"
+          >
+            Get Free Estimate
+            <img
+              src="assets/images/icons/arrow.png"
+              alt="image"
+              class="grayscale-100 ml-3 brightness-0 invert filter"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="absolute right-0 h-[700px] w-[877px]"
+        style="background-image: url(assets/images/backgrounds/Subtract.png)"
+      ></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section
+      class="mx-auto mt-48 grid h-[679px] w-[1210px] place-content-center rounded-[60px] bg-orange-light"
+    >
+      <h1 class="text-center font-DM-serif-Display text-5xl text-white">
+        What the People Thinks
+      </h1>
+      <h1 class="text-center font-DM-serif-Display text-5xl text-white">
+        About Us
+      </h1>
+      <!-- container of containers  -->
+      <div class="flex gap-5">
+      <!--  testimonail container1  -->
+      <div class="mt-5 flex justify-center gap-5">
+        <div class="h-[340px] w-[370px] rounded-[60px] bg-white pl-9 pt-14">
+          <div class="flex">
+            <img
+              src="assets/images/icons/testimonial1.jpg"
+              alt="testsimonial1"
+              class="rounded-full"
+            />
+            <div class="ml-6">
+              <h1 class="font-DM-serif-Display text-2xl text-black-dark">
+                Natasha
+              </h1>
+              <p class="font-Jost text-lg text-black-light">Moscow,Russia</p>
+            </div>
+          </div>
+          <p class="mb- mt-6 text-wrap text-xlp text-black-light">
+            Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum
+            has been.
+          </p>
+        </div>
+      </div>
+
+      <!--  testimonail container2  -->
+      <div class="mt-5 flex justify-center gap-5">
+        <div class="h-[340px] w-[370px] rounded-[60px] bg-white pl-9 pt-14">
+          <div class="flex">
+            <img
+              src="assets/images/icons/testimonial2.png"
+              alt="testsimonial2"
+              class="rounded-full"
+            />
+            <div class="ml-6">
+              <h1 class="font-DM-serif-Display text-2xl text-black-dark">
+                Raymond Galario
+              </h1>
+              <p class="font-Jost text-lg text-black-light">UK, London</p>
+            </div>
+          </div>
+          <p class="mb- mt-6 text-wrap text-xlp text-black-light">
+            Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum
+            has been.
+          </p>
+        </div>
+      </div>
+
+      <!--  testimonail container3  -->
+      <div class="mt-5 flex justify-center gap-5">
+        <div class="h-[340px] w-[370px] rounded-[60px] bg-white pl-9 pt-14">
+          <div class="flex">
+            <img
+              src="assets/images/icons/testimonial3.png"
+              alt="testsimonial1"
+              class="rounded-full"
+            />
+            <div class="ml-6">
+              <h1 class="font-DM-serif-Display text-2xl text-black-dark">
+                Benny Roll
+              </h1>
+              <p class="font-Jost text-lg text-black-light">USA, New York</p>
+            </div>
+          </div>
+          <p class="mb- mt-6 text-wrap text-xlp text-black-light">
+            Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum
+            has been.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Companies with us -->
+    <section class="mt-48 flex justify-between">
+      <img src="/assets/images/icons/companyLogo1.png" alt="companyLogo1">
+      <img src="/assets/images/icons/companyLogo2.png" alt="companyLogo2">
+      <img src="/assets/images/icons/companyLogo3.png" alt="companyLogo3">
+      <img src="/assets/images/icons/companyLogo4.png" alt="companyLogo4">
+    </section>
   </body>
 </html>
