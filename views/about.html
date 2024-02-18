@@ -208,7 +208,10 @@
       </h1>
       <!-- to make slider  -->
 
-      <div id = "slider-wrapper" class="slider-wrapper relative flex xl:ml-8 xl:overflow-hidden">
+      <div
+        id="slider-wrapper"
+        class="slider-wrapper relative flex xl:ml-8 xl:overflow-hidden"
+      >
         <button
           id="prev-slide"
           class="slide-button absolute -left-4 top-1/2 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center border-none text-3xl text-white outline-none hover:opacity-50 sm:size-12 sm:rounded-full sm:text-5xl md:hidden xsm:text-2xlp"
@@ -330,6 +333,58 @@
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
+    </section>
+
+    <!--
+  ***************************
+  *        Contact Us      *
+  ***************************
+-->
+
+    <section class="mt-14 md:mt-20 xl:mx-auto xl:mt-48 xl:w-[1210px]">
+      <h1
+        class="mx-3 text-center font-DM-serif-Display text-2xlp text-black-dark sm:mx-auto sm:w-[400px] sm:text-[32px] md:w-[460px] md:text-4xl xl:w-[600px] xl:text-5xl xsm:text-2xl"
+      >
+        Creative project? Let's have a productive talk.
+      </h1>
+
+      <div class=" mx-auto mt-8 w-[300px]  sm:mx-auto   sm:w-[560px] md:w-[680px] md:mx-auto xl:ml-0 xl:mt-24">
+        <div
+          class="sm:flex sm:gap-32 md:gap-52 xl:w-[1210px] xl:justify-between xl:gap-80"
+        >
+          <div class=" mt-4 border-b-2 sm:w-48  xl:pr-96">
+            <input
+              class="border-none font-Jost text-xl text-black-light outline-none sm:text-2xl xl:text-3xl "
+              placeholder="Name"
+              type="text"
+            />
+          </div>
+          <div class="mt-4 border-b-2 sm:pr-0 xl:pr-40">
+            <input
+              class="border-none font-Jost text-xl text-black-light outline-none sm:text-2xl xl:text-3xl"
+              placeholder="Email"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="mt-4 border-b-2 sm:w-[560px] xl:mt-40 xl:w-[1210px]">
+          <input
+            class="border-none font-Jost text-xl text-black-light outline-none sm:text-2xl  xl:text-3xl"
+            placeholder="Message"
+            type="text"
+          />
+        </div>
+      </div>
+      <button
+        class=" mx-auto mt-10 flex items-center rounded-2xl bg-black-dark px-8 py-4 font-Inter text-lg font-semibold text-white xl:px-10 xl:py-6"
+      >
+        Send Now
+        <img
+          src="../assets/images/icons/arrow.png"
+          alt="image"
+          class="grayscale-100 ml-3 brightness-0 invert filter"
+        />
+      </button>
     </section>
     <script src="/views/sliderSupport.js"></script>
   </body>
