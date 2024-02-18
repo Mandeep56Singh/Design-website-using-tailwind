@@ -243,87 +243,149 @@
   ***************************
 -->
 
+   
     <section
-      class="mx-auto mt-48 grid h-[679px] w-[1210px] place-content-center rounded-[60px] bg-orange-light"
+      class="mx-auto mt-60 grid w-screen place-content-center bg-orange-light pb-20 sm:mt-72 md:mt-96 xl:h-[679px] xl:w-[1210px] xl:rounded-[30px]"
     >
-      <h1 class="text-center font-DM-serif-Display text-5xl text-white">
+      <h1
+        class="mt-6 text-center font-DM-serif-Display text-3xl text-white sm:text-3xlp md:mt-16 md:text-5xl xl:mt-[80px] xsm:text-2xl"
+      >
         What the People Thinks
       </h1>
-      <h1 class="text-center font-DM-serif-Display text-5xl text-white">
+      <h1
+        class="text-center font-DM-serif-Display text-3xl text-white sm:text-3xlp md:text-5xl xsm:text-2xl"
+      >
         About Us
       </h1>
-      <!-- container of containers  -->
-      <div class="flex gap-5">
-        <!--  testimonail container1  -->
-        <div class="mt-5 flex justify-center gap-5">
-          <div class="h-[340px] w-[370px] rounded-[60px] bg-white pl-9 pt-14">
-            <div class="flex">
-              <img
-                src="assets/images/icons/testimonial1.jpg"
-                alt="testsimonial1"
-                class="rounded-full"
-              />
-              <div class="ml-6">
-                <h1 class="font-DM-serif-Display text-2xl text-black-dark">
-                  Natasha
-                </h1>
-                <p class="font-Jost text-lg text-black-light">Moscow,Russia</p>
-              </div>
-            </div>
-            <p class="mb- mt-6 text-wrap text-xlp text-black-light">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been.
-            </p>
-          </div>
-        </div>
+      <!-- to make slider  -->
 
-        <!--  testimonail container2  -->
-        <div class="mt-5 flex justify-center gap-5">
-          <div class="h-[340px] w-[370px] rounded-[60px] bg-white pl-9 pt-14">
-            <div class="flex">
-              <img
-                src="assets/images/icons/testimonial2.png"
-                alt="testsimonial2"
-                class="rounded-full"
-              />
-              <div class="ml-6">
-                <h1 class="font-DM-serif-Display text-2xl text-black-dark">
-                  Raymond Galario
-                </h1>
-                <p class="font-Jost text-lg text-black-light">UK, London</p>
+      <div
+        id="slider-wrapper"
+        class="slider-wrapper relative flex xl:ml-8 xl:overflow-hidden"
+      >
+        <button
+          id="prev-slide"
+          class="slide-button absolute -left-4 top-1/2 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center border-none text-3xl text-white outline-none hover:opacity-50 sm:size-12 sm:rounded-full sm:text-5xl md:hidden xsm:text-2xlp"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <!-- container of containers  -->
+        <div
+          class="slider-list pointer-events-none mx-auto flex w-[280px] gap-[270px] overflow-auto sm:w-[340px] sm:gap-[330px] md:mt-8 md:block md:w-screen xl:flex xl:gap-5"
+        >
+          <!--  testimonail container1  -->
+          <div id="slide1" class="mt-4 flex justify-center gap-5">
+            <div
+              class="ml-[10px] h-[200px] w-[260px] rounded-[30px] bg-white px-4 pt-4 sm:h-[260px] sm:w-[320px] md:mr-96 md:h-[220px] xl:m-0 xl:h-[300px] xl:w-[370px] xl:pl-9"
+            >
+              <div class="flex items-center xl:mt-6">
+                <img
+                  src="/assets/images/icons/testimonial1.jpg"
+                  alt="testsimonial1"
+                  class="size-16 rounded-full sm:size-20"
+                />
+                <div class="ml-3">
+                  <h1
+                    class="font-DM-serif-Display text-xlp text-black-dark sm:text-2xlp"
+                  >
+                    Natasha
+                  </h1>
+                  <p class="-mt-1 font-Jost text-black-light sm:text-lg">
+                    Moscow,Russia
+                  </p>
+                </div>
               </div>
+              <p class="mt-4 text-wrap text-black-light sm:text-xl xl:hidden">
+                Transformed my house into a dream home. Couldn't be happier with
+                results!
+              </p>
+              <p
+                class="hidden text-wrap text-black-light sm:text-xl xl:mt-6 xl:block"
+              >
+                Thanks to the incredible team at Interior Bliss, our home has
+                been transformed into a sanctuary of elegance and comfort.
+              </p>
             </div>
-            <p class="mb- mt-6 text-wrap text-xlp text-black-light">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been.
-            </p>
           </div>
-        </div>
 
-        <!--  testimonail container3  -->
-        <div class="mt-5 flex justify-center gap-5">
-          <div class="h-[340px] w-[370px] rounded-[60px] bg-white pl-9 pt-14">
-            <div class="flex">
-              <img
-                src="assets/images/icons/testimonial3.png"
-                alt="testsimonial1"
-                class="rounded-full"
-              />
-              <div class="ml-6">
-                <h1 class="font-DM-serif-Display text-2xl text-black-dark">
-                  Benny Roll
-                </h1>
-                <p class="font-Jost text-lg text-black-light">USA, New York</p>
+          <!--  testimonail container2  -->
+          <div id="slide2" class="mt-4 flex justify-center gap-5">
+            <div
+              class="mx-[20px] h-[200px] w-[260px] rounded-[30px] bg-white px-4 pt-4 sm:h-[260px] sm:w-[320px] md:ml-96 md:h-[220px] xl:m-0 xl:h-[300px] xl:w-[370px] xl:pl-9"
+            >
+              <div class="flex items-center xl:mt-6">
+                <img
+                  src="/assets/images/icons/testimonial2.png"
+                  alt="testsimonial2"
+                  class="size-16 rounded-full sm:size-20"
+                />
+                <div class="ml-3">
+                  <h1
+                    class="font-DM-serif-Display text-xlp text-black-dark sm:text-2xlp"
+                  >
+                    Raymond
+                  </h1>
+                  <p class="-mt-1 font-Jost text-black-light sm:text-lg">
+                    UK, London
+                  </p>
+                </div>
               </div>
+              <p class="mt-4 text-wrap text-black-light sm:text-xl xl:hidden">
+                Transformed my house into a dream home. Couldn't be happier with
+                results!
+              </p>
+              <p
+                class="hidden text-wrap text-black-light sm:text-xl xl:mt-6 xl:block"
+              >
+                Thanks to the incredible team at Interior Bliss, our home has
+                been transformed into a sanctuary of elegance and comfort.
+              </p>
             </div>
-            <p class="mb- mt-6 text-wrap text-xlp text-black-light">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been.
-            </p>
+          </div>
+          <!--  testimonail container3  -->
+          <div id="slide3" class="mt-4 flex justify-center gap-5">
+            <div
+              class="ml-[10px] h-[200px] w-[260px] rounded-[30px] bg-white px-4 pt-4 sm:h-[260px] sm:w-[320px] md:mr-96 md:h-[220px] xl:m-0 xl:h-[300px] xl:w-[370px] xl:pl-9"
+            >
+              <div class="flex items-center xl:mt-6">
+                <img
+                  src="/assets/images/icons/testimonial1.jpg"
+                  alt="testsimonial1"
+                  class="size-16 rounded-full sm:size-20"
+                />
+                <div class="ml-3">
+                  <h1
+                    class="font-DM-serif-Display text-xlp text-black-dark sm:text-2xlp"
+                  >
+                    Benny Roll
+                  </h1>
+                  <p class="-mt-1 font-Jost text-black-light sm:text-lg">
+                    USA, New York
+                  </p>
+                </div>
+              </div>
+              <p class="mt-4 text-wrap text-black-light sm:text-xl xl:hidden">
+                Transformed my house into a dream home. Couldn't be happier with
+                results!
+              </p>
+              <p
+                class="hidden text-wrap text-black-light sm:text-xl xl:mt-6 xl:block"
+              >
+                Thanks to the incredible team at Interior Bliss, our home has
+                been transformed into a sanctuary of elegance and comfort.
+              </p>
+            </div>
           </div>
         </div>
+        <button
+          id="next-slide"
+          class="slide-button absolute -right-4 top-1/2 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center border-none text-3xl text-white outline-none hover:opacity-50 sm:size-12 sm:rounded-full sm:text-5xl md:hidden xsm:text-2xlp"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
     </section>
+    
 
     <!--
   ***************************
