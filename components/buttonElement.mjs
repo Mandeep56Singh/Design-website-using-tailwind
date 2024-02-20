@@ -11,7 +11,9 @@ export function createButton() {
     Button = document.querySelector(".button-orange");
     color = "bg-orange-light";
   }
-
+  else {
+    return;
+  }
   // Define classNames array based on the color
   classNames = [
     "flex",
