@@ -2,7 +2,6 @@ export function slider(){
   const sliderContent = document.querySelector(".slider-list");
   const slideButtons = document.querySelectorAll(".slide-button");
   const maxScroll = sliderContent.scrollWidth - sliderContent.clientWidth;
-  let index = 1;
   console.log(sliderContent.scrollWidth);
   slideButtons.forEach((button) => {
     button.addEventListener("click", () => {

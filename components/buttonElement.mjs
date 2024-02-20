@@ -1,25 +1,11 @@
 export function createButton() {
-  let Button;
+  let blackButtons = document.getElementsByClassName("button-black"); 
+  let orangeButtons = document.getElementsByClassName("button-orange");  
   let color;
-  let classNames; // Declare classNames variable
-
-  // Define classNames based on the condition
-  if (document.querySelector(".button-black")) {
-    Button = document.querySelector(".button-black");
-    color = "bg-black-dark";
-  } else if (document.querySelector(".button-orange")) {
-    Button = document.querySelector(".button-orange");
-    color = "bg-orange-light";
-  }
-  else {
-    return;
-  }
-  // Define classNames array based on the color
-  classNames = [
+  let classNames = [
     "flex",
     "items-center",
     "rounded-2xl",
-    `${color}`, // Use the color variable here
     "px-8",
     "py-4",
     "font-Inter",
@@ -28,22 +14,54 @@ export function createButton() {
     "text-white",
     "xl:px-10",
     "xl:py-6",
-  ];
+  ]; // Define classNames array with common classes
 
-  // Add classNames to the button
-  classNames.forEach((className) => {
-    Button.classList.add(className);
+
+  // Loop through each button in the collection
+  Array.from(blackButtons).forEach((button) => {
+    // Add color class
+    button.classList.add("bg-black-dark");
+
+    // Add common classes
+    classNames.forEach((className) => {
+      button.classList.add(className);
+    });
+
+    // Create and append image
+    const imgURL = "../assets/images/icons/arrow.png";
+    const img = document.createElement("img");
+    img.classList.add(
+      "grayscale-100",
+      "ml-3",
+      "brightness-0",
+      "invert",
+      "filter"
+    );
+    img.src = imgURL;
+    button.appendChild(img);
+  });
+  Array.from(orangeButtons).forEach((button) => {
+    // Add color class
+    button.classList.add("bg-orange-light");
+
+    // Add common classes
+    classNames.forEach((className) => {
+      button.classList.add(className);
+    });
+
+    // Create and append image
+    const imgURL = "../assets/images/icons/arrow.png";
+    const img = document.createElement("img");
+    img.classList.add(
+      "grayscale-100",
+      "ml-3",
+      "brightness-0",
+      "invert",
+      "filter"
+    );
+    img.src = imgURL;
+    button.appendChild(img);
   });
 
-  const imgURL = "../assets/images/icons/arrow.png";
-  const img = document.createElement("img");
-  img.classList.add(
-    "grayscale-100",
-    "ml-3",
-    "brightness-0",
-    "invert",
-    "filter"
-  );
-  img.src = imgURL;
-  Button.appendChild(img);
+  
 }
