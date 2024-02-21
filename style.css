@@ -23,3 +23,19 @@ html {
 .slider-list::-webkit-scrollbar {
   display: none;
 }
+@layer components {
+  .btn {
+  @apply   flex
+  items-center
+  justify-center
+  rounded-2xl
+  px-8
+  py-4
+  font-Inter
+  text-lg
+  font-semibold
+  text-white
+  xl:px-10
+  xl:py-6
+}
+}
