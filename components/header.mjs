@@ -1,9 +1,12 @@
 export function createHeader() {
+  const header = document.querySelector("header");
+  const links = [
+    "/index.html",
+   "/views/about.html",
+   "/views/service.html",
+];
 
-    const header = document.querySelector(
-        'header'
-    );
-    header.innerHTML = `
+  header.innerHTML = `
      <div class="mt-5 flex h-[50px] justify-between sm:mt-4 xsm:mt-2">
       <div class="ml-3 flex items-center gap-1">
         <img
@@ -21,13 +24,13 @@ export function createHeader() {
       <nav class="flex items-center gap-3 xl:gap-12">
         <ul class="hidden xl:mr-5 xl:flex xl:gap-12">
           <li class="font-Jost text-xl font-medium">
-            <a href="/index.html">Home</a>
+            <a href="${links[0]}">Home</a>
           </li>
           <li class="font-Jost text-xl font-medium">
-            <a href="/views/about.html">Pages</a>
+            <a href="${links[1]}">Pages</a>
           </li>
           <li class="font-Jost text-xl font-medium">
-            <a href="/test.html">Services</a>
+            <a href="${links[2]}">Services</a>
           </li>
           <li class="font-Jost text-xl font-medium"><a href="#">Project</a></li>
           <li class="font-Jost text-xl font-medium"><a href="#">Blog</a></li>
