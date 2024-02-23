@@ -2,11 +2,17 @@
 export default {
   mode: "jit",
 
-  content: ["./*.html", "./views/*.html", "./*.css"],
+  content: [
+    "./*.html",
+    "./views/*.html",
+    "./components/*.mjs",
+    "./*js",
+    "./*.css",
+  ],
   theme: {
     extend: {
       colors: {
-        black: { 
+        black: {
           default: "#000000",
           dark: "#292F36",
           light: "#4D5053",

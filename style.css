@@ -42,5 +42,8 @@ html {
 .margin-section {
  @apply mt-20 sm:mt-28  md:mt-32 xl:mt-40;
 }
+.font-style {
+  @apply text-3xl sm:text-3xlp md:text-5xl xl:text-6xl xsm:text-2xl;
+}
 
 }
