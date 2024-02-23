@@ -37,5 +37,10 @@ html {
   text-white
   xl:px-10
   xl:py-6
+
+};
+.margin-section {
+ @apply mt-20 sm:mt-28  md:mt-32 xl:mt-40;
 }
+
 }
