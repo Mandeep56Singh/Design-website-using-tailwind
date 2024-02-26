@@ -2,11 +2,17 @@
 export default {
   mode: "jit",
 
-  content: ["./*.html", "./views/*.html", "./*.css"],
+  content: [
+    "./*.html",
+    "./views/*.html",
+    "./components/*.mjs",
+    "./*js",
+    "./*.css",
+  ],
   theme: {
     extend: {
       colors: {
-        black: { 
+        black: {
           default: "#000000",
           dark: "#292F36",
           light: "#4D5053",
@@ -35,6 +41,7 @@ export default {
         "hero-image": "url('/assets/images/backgrounds/Rectangle 1.png')",
         workFrame1: "url('assets/images/backgrounds/Frame 2.png')",
         "About-Us-img": "url('assets/images/backgrounds/Rectangle 11.png')",
+        "services-img": "url('assets/images/backgrounds/Rectangle 20.png')",
       },
       screens: {
         xsm: { min: "320px", max: "359px" },

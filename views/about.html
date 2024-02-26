@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,64 +6,19 @@
     <link rel="stylesheet" href="../style.css" />
     <title>About us</title>
   </head>
+
   <body>
-    <header class="mt-5 flex h-[50px] justify-between sm:mt-4 xsm:mt-2">
-      <div class="ml-3 flex items-center gap-1">
-        <img
-          src="../assets/images/logos/Vector.png"
-          alt="logo"
-          class="sm: size-8 md:size-10 xl:size-12"
-        />
-        <h1
-          class="xsm: font-DM-serif-Display text-3xlp text-black-light sm:mt-2 sm:text-2xlp xsm:mt-2 xsm:text-2xl"
-        >
-          SELHONO
-        </h1>
-      </div>
+   <header></header>
 
-      <nav class="flex items-center gap-3 xl:gap-12">
-        <ul class="hidden xl:mr-5 xl:flex xl:gap-12">
-          <li class="font-Jost text-xl font-medium"><a href="#">Home</a></li>
-          <li class="font-Jost text-xl font-medium">
-            <a href="/views/about.html">Pages</a>
-          </li>
-          <li class="font-Jost text-xl font-medium">
-            <a href="#">Services</a>
-          </li>
-          <li class="font-Jost text-xl font-medium"><a href="#">Project</a></li>
-          <li class="font-Jost text-xl font-medium"><a href="#">Blog</a></li>
-          <li class="font-Jost text-xl font-medium"><a href="#">Contact</a></li>
-        </ul>
-        <div>
-          <img
-            src="../assets/images/icons/search.png"
-            alt="search"
-            class="md:mr-4"
-          />
-        </div>
-        <img
-          src="../assets/images/icons/menu.svg"
-          alt="menu"
-          class="mr-5 block size-6 md:mr-24 xl:hidden"
-        />
-      </nav>
-    </header>
+    <!--
+  ***************************
+  *      Banner About us    *
+  ***************************
+-->
+    <div class="banner">
+     About us
+    </div>
 
-    <!-- About Us image -->
-    <section class="mt-6 sm:mt-10 md:mt-12 xl:mt-16">
-      <div
-        class="relative h-36 w-screen bg-About-Us-img bg-center sm:h-44 md:h-56 xl:h-64 2xl:h-[356px]"
-      >
-        <div
-          class="absolute inset-0 h-full w-full bg-black-default bg-opacity-60 pt-16 sm:pt-20 md:pt-28 xl:pt-36 2xl:pt-44"
-        >
-          <h1
-            class="text-center font-DM-serif-Display text-3xlp text-white sm:text-6xl md:text-6xlp xl:text-7xl"
-          >
-            About Us
-          </h1>
-        </div>
-      </div>
       <!-- Quote -->
       <div
         class="md:[520px] mx-auto mt-6 flex w-[320px] sm:mt-10 sm:w-[484px] md:mt-12 xl:mt-16"
@@ -82,84 +37,300 @@
         </div>
         <div class="mx-2 h-24 border-l border-black-light sm:mx-2"></div>
       </div>
+   
 
+    <!--
+  ***************************
+  *        More About Us      *
+  ***************************
+-->
+    <section class="mb-[180px] mt-14 sm:mt-20 md:mt-24 xl:mt-32">
       <!-- what we do -->
       <div
         class="relative mt-0 h-[300px] flex-row-reverse justify-center xl:mx-auto xl:mt-40 xl:flex xl:w-[1280px]"
       >
-        <img
-          src="../assets/images/backgrounds/Rectangle 18.png"
-          alt="image"
-          class="clip relative mx-auto w-11/12 xl:mx-0 xl:h-[500px] xl:w-[700px]"
-        />
+        <div>
+          <img
+            src="../assets/images/backgrounds/Rectangle 18.png"
+            alt="image"
+            class="relative mx-auto hidden w-11/12 xl:mx-0 xl:block xl:h-[500px] xl:w-[700px]"
+          />
+        </div>
         <div class="xl:mr-8 xl:mt-10 xl:w-[500px]">
           <div
-            class="absolute left-1/2 size-[200px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white sm:mt-4 sm:size-[380px] sm:-translate-y-1/3 md:mt-2 md:size-[460px] xl:static xl:ml-12 xl:h-0 xl:translate-x-0 xl:translate-y-0"
+            class="mt-50 relative left-1/2 flex h-[260px] w-11/12 -translate-x-1/2 flex-col items-center justify-end bg-bottom bg-no-repeat text-black-dark before:absolute before:bottom-0 before:left-1/2 before:z-10 before:h-[100px] before:w-[200px] before:-translate-x-1/2 before:rounded-tl-full before:rounded-tr-full before:bg-white sm:h-[320px] sm:before:h-[130px] sm:before:w-[260px] md:h-[360px] md:before:h-[160px] md:before:w-[320px] xl:mt-24 xl:h-0"
+            style="
+              background-image: url(/assets/images/backgrounds/Rectangle\ 18.png);
+            "
           >
             <h1
-              class="mt-12 text-center font-DM-serif-Display text-3xl text-black-dark sm:text-3xlp md:mt-20 md:text-5xl xl:text-start"
+              class="relative z-10 mt-12 text-center font-DM-serif-Display text-3xl text-black-dark sm:text-3xlp md:mt-20 md:text-5xl xl:mr-40 xl:text-start"
             >
               What We Do
             </h1>
           </div>
           <p
-            class="md:xlp relative z-10 mx-auto mt-6 w-[300px] text-center font-Jost text-lg text-black-light sm:w-[400px] sm:text-xl xl:ml-12 xl:mt-16 xl:w-[445px] xl:text-start xl:text-xlp"
+            class="md:xlp mx-auto mt-6 w-[300px] text-center font-Jost text-lg text-black-light sm:w-[400px] sm:text-xl xl:ml-12 xl:w-[445px] xl:text-start xl:text-xlp"
           >
             Transforming your house into a dream home, we specialize in crafting
             personalized interiors tailored to your unique style and
             preferences.
           </p>
 
-          <button
-            class="relative z-10 mx-auto mt-6 flex items-center rounded-2xl bg-black-dark px-8 py-4 font-Inter text-lg font-semibold text-white xl:ml-12 xl:mt-10 xl:px-10 xl:py-6"
-          >
-            Get Started
-            <img
-              src="../assets/images/icons/arrow.png"
-              alt="image"
-              class="grayscale-100 ml-3 brightness-0 invert filter"
-            />
+          <button class=" button-black mx-auto mt-6 xl:ml-12 xl:mt-10">
+            Our Concept
           </button>
         </div>
       </div>
 
-      <!-- our result -->
+      <!-- why trust us -->
       <div
-        class="relative mt-44 h-[300px] flex-row justify-center xl:mx-auto xl:mt-40 xl:flex xl:w-[1280px] sm:mt-72 xsm:mt-32 md:mt-96 "
+        class="relative mt-0 h-[300px] flex-row justify-center xl:mx-auto xl:mt-[380px] xl:flex xl:w-[1280px]"
       >
-        <img
-          src="../assets/images/backgrounds/Rectangle 19.png"
-          alt="image"
-          class="clip relative mx-auto w-11/12 xl:mx-0 xl:h-[500px] xl:w-[700px]"
-        />
+        <div>
+          <img
+            src="../assets/images/backgrounds/Rectangle 19.png"
+            alt="image"
+            class="relative mx-auto hidden w-11/12 xl:mx-0 xl:block xl:h-[500px] xl:w-[700px]"
+          />
+        </div>
         <div class="xl:mr-8 xl:mt-10 xl:w-[500px]">
           <div
-            class="absolute left-1/2 size-[200px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white sm:mt-4 sm:size-[380px] sm:-translate-y-1/3 md:mt-2 md:size-[460px] xl:static xl:ml-12 xl:h-0 xl:translate-x-0 xl:translate-y-0"
+            class="relative left-1/2 mt-[236px] flex h-[260px] w-11/12 -translate-x-1/2 flex-col items-center justify-end bg-bottom bg-no-repeat text-black-dark before:absolute before:bottom-0 before:left-1/2 before:z-10 before:h-[100px] before:w-[200px] before:-translate-x-1/2 before:rounded-tl-full before:rounded-tr-full before:bg-white sm:mt-[272px] sm:h-[320px] sm:before:h-[130px] sm:before:w-[260px] md:mt-[348px] md:h-[360px] md:before:h-[160px] md:before:w-[320px] xl:mt-24 xl:h-0 xl:before:h-0"
+            style="
+              background-image: url(/assets/images/backgrounds/Rectangle\ 19.png);
+            "
           >
             <h1
-              class="mt-12 text-center font-DM-serif-Display text-3xl text-black-dark sm:text-3xlp md:mt-20 md:text-5xl xl:text-start"
+              class="relative z-10 mt-12 text-center font-DM-serif-Display text-3xl text-black-dark sm:text-3xlp md:mt-20 md:text-5xl xl:mr-40 xl:text-start"
             >
-              Outcomes
+              Why trust Us
             </h1>
           </div>
           <p
-            class="md:xlp relative z-10 mx-auto mt-6 w-[300px] text-center font-Jost text-lg text-black-light sm:w-[400px] sm:text-xl xl:ml-12 xl:mt-16 xl:w-[445px] xl:text-start xl:text-xlp"
+            class="md:xlp relative z-10 mx-auto mt-6 w-[300px] text-center font-Jost text-lg text-black-light sm:w-[400px] sm:text-xl xl:ml-12 xl:w-[445px] xl:text-start xl:text-xlp"
           >
-            Our awards showcase our commitment to exceptional craftsmanship. Experience award-winning interiors that transform houses into homes
+            Elevate your space with confidence. Our expert designers blend
+            creativity and functionality to ensure every detail reflects your
+            unique style.
           </p>
 
           <button
-            class="relative z-10 mx-auto mt-6 flex items-center rounded-2xl bg-black-dark px-8 py-4 font-Inter text-lg font-semibold text-white xl:ml-12 xl:mt-10 xl:px-10 xl:py-6"
+            class="button-black relative z-10 mx-auto mt-6 xl:ml-12 xl:mt-10"
           >
-            Our Portfolio 
-            <img
-              src="../assets/images/icons/arrow.png"
-              alt="image"
-              class="grayscale-100 ml-3 brightness-0 invert filter"
-            />
+            Our Portfolio
           </button>
         </div>
       </div>
     </section>
+
+    <!--
+  ***************************
+  *        Testimonials      *
+  ***************************
+-->
+
+    <section
+      class="mx-auto mt-60 grid w-screen place-content-center bg-orange-light pb-20 sm:mt-72 md:mt-96 xl:h-[679px] xl:w-[1210px] xl:rounded-[30px]"
+    >
+      <h1
+        class="mt-6 text-center font-DM-serif-Display text-3xl text-white sm:text-3xlp md:mt-16 md:text-5xl xl:mt-[80px] xsm:text-2xl"
+      >
+        What the People Thinks
+      </h1>
+      <h1
+        class="text-center font-DM-serif-Display text-3xl text-white sm:text-3xlp md:text-5xl xsm:text-2xl"
+      >
+        About Us
+      </h1>
+      <!-- to make slider  -->
+
+      <div
+        id="slider-wrapper"
+        class="slider-wrapper relative flex xl:ml-8 xl:overflow-hidden"
+      >
+        <button
+          id="prev-slide"
+          class="slide-button absolute -left-4 top-1/2 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center border-none text-3xl text-white outline-none hover:opacity-50 sm:size-12 sm:rounded-full sm:text-5xl md:hidden xsm:text-2xlp"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <!-- container of containers  -->
+        <div
+          class="slider-list pointer-events-none mx-auto flex w-[280px] gap-[270px] overflow-auto sm:w-[340px] sm:gap-[330px] md:mt-8 md:block md:w-screen xl:flex xl:gap-5"
+        >
+          <!--  testimonail container1  -->
+          <div id="slide1" class="mt-4 flex justify-center gap-5">
+            <div
+              class="ml-[10px] h-[200px] w-[260px] rounded-[30px] bg-white px-4 pt-4 sm:h-[260px] sm:w-[320px] md:mr-96 md:h-[220px] xl:m-0 xl:h-[300px] xl:w-[370px] xl:pl-9"
+            >
+              <div class="flex items-center xl:mt-6">
+                <img
+                  src="/assets/images/icons/testimonial1.jpg"
+                  alt="testsimonial1"
+                  class="size-16 rounded-full sm:size-20"
+                />
+                <div class="ml-3">
+                  <h1
+                    class="font-DM-serif-Display text-xlp text-black-dark sm:text-2xlp"
+                  >
+                    Natasha
+                  </h1>
+                  <p class="-mt-1 font-Jost text-black-light sm:text-lg">
+                    Moscow,Russia
+                  </p>
+                </div>
+              </div>
+              <p class="mt-4 text-wrap text-black-light sm:text-xl xl:hidden">
+                Transformed my house into a dream home. Couldn't be happier with
+                results!
+              </p>
+              <p
+                class="hidden text-wrap text-black-light sm:text-xl xl:mt-6 xl:block"
+              >
+                Thanks to the incredible team at Interior Bliss, our home has
+                been transformed into a sanctuary of elegance and comfort.
+              </p>
+            </div>
+          </div>
+
+          <!--  testimonail container2  -->
+          <div id="slide2" class="mt-4 flex justify-center gap-5">
+            <div
+              class="mx-[20px] h-[200px] w-[260px] rounded-[30px] bg-white px-4 pt-4 sm:h-[260px] sm:w-[320px] md:ml-96 md:h-[220px] xl:m-0 xl:h-[300px] xl:w-[370px] xl:pl-9"
+            >
+              <div class="flex items-center xl:mt-6">
+                <img
+                  src="/assets/images/icons/testimonial2.png"
+                  alt="testsimonial2"
+                  class="size-16 rounded-full sm:size-20"
+                />
+                <div class="ml-3">
+                  <h1
+                    class="font-DM-serif-Display text-xlp text-black-dark sm:text-2xlp"
+                  >
+                    Raymond
+                  </h1>
+                  <p class="-mt-1 font-Jost text-black-light sm:text-lg">
+                    UK, London
+                  </p>
+                </div>
+              </div>
+              <p class="mt-4 text-wrap text-black-light sm:text-xl xl:hidden">
+                Transformed my house into a dream home. Couldn't be happier with
+                results!
+              </p>
+              <p
+                class="hidden text-wrap text-black-light sm:text-xl xl:mt-6 xl:block"
+              >
+                Thanks to the incredible team at Interior Bliss, our home has
+                been transformed into a sanctuary of elegance and comfort.
+              </p>
+            </div>
+          </div>
+          <!--  testimonail container3  -->
+          <div id="slide3" class="mt-4 flex justify-center gap-5">
+            <div
+              class="ml-[10px] h-[200px] w-[260px] rounded-[30px] bg-white px-4 pt-4 sm:h-[260px] sm:w-[320px] md:mr-96 md:h-[220px] xl:m-0 xl:h-[300px] xl:w-[370px] xl:pl-9"
+            >
+              <div class="flex items-center xl:mt-6">
+                <img
+                  src="/assets/images/icons/testimonial1.jpg"
+                  alt="testsimonial1"
+                  class="size-16 rounded-full sm:size-20"
+                />
+                <div class="ml-3">
+                  <h1
+                    class="font-DM-serif-Display text-xlp text-black-dark sm:text-2xlp"
+                  >
+                    Benny Roll
+                  </h1>
+                  <p class="-mt-1 font-Jost text-black-light sm:text-lg">
+                    USA, New York
+                  </p>
+                </div>
+              </div>
+              <p class="mt-4 text-wrap text-black-light sm:text-xl xl:hidden">
+                Transformed my house into a dream home. Couldn't be happier with
+                results!
+              </p>
+              <p
+                class="hidden text-wrap text-black-light sm:text-xl xl:mt-6 xl:block"
+              >
+                Thanks to the incredible team at Interior Bliss, our home has
+                been transformed into a sanctuary of elegance and comfort.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          id="next-slide"
+          class="slide-button absolute -right-4 top-1/2 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center border-none text-3xl text-white outline-none hover:opacity-50 sm:size-12 sm:rounded-full sm:text-5xl md:hidden xsm:text-2xlp"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!--
+  ***************************
+  *        Contact Us      *
+  ***************************
+-->
+
+    <section class="mt-14 md:mt-20 xl:mx-auto xl:mt-48 xl:w-[1210px]">
+      <h1
+        class="mx-3 text-center font-DM-serif-Display text-2xlp text-black-dark sm:mx-auto sm:w-[400px] sm:text-[32px] md:w-[460px] md:text-4xl xl:w-[600px] xl:text-5xl xsm:text-2xl"
+      >
+        Creative project? Let's have a productive talk.
+      </h1>
+
+      <div
+        class="mx-auto mt-8 w-[300px] sm:mx-auto sm:w-[560px] md:mx-auto md:w-[680px] xl:ml-0 xl:mt-24"
+      >
+        <div
+          class="sm:flex sm:gap-32 md:gap-52 xl:w-[1210px] xl:justify-between xl:gap-80"
+        >
+          <div class="mt-4 border-b-2 sm:w-48 md:pr-60 xl:pr-96">
+            <input
+              class="border-none font-Jost text-xl text-black-light outline-none sm:text-2xl xl:text-3xl"
+              placeholder="Name"
+              type="text"
+            />
+          </div>
+          <div class="mt-4 border-b-2 sm:pr-0 xl:pr-40">
+            <input
+              class="border-none font-Jost text-xl text-black-light outline-none sm:text-2xl xl:text-3xl"
+              placeholder="Email"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-4 border-b-2 sm:w-[560px] md:w-[680px] xl:mt-40 xl:w-[1210px]"
+        >
+          <input
+            class="border-none font-Jost text-xl text-black-light outline-none sm:text-2xl xl:text-3xl"
+            placeholder="Message"
+            type="text"
+          />
+        </div>
+      </div>
+      <button class="button-black mx-auto mt-10">
+        Send Now
+        <img
+          src="../assets/images/icons/arrow.png"
+          alt="image"
+          class="grayscale-100 ml-3 brightness-0 invert filter"
+        />
+      </button>
+    </section>
+    <!--
+  ***************************
+  *          Footer       *
+  ***************************
+-->
+   <footer></footer>
+     <script type="module" src="/main.js" ></script>
   </body>
 </html>

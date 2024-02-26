@@ -1,30 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Jost:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Jost:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
-    .w-1210 {
-        width: 1210px;
-    }
+  .w-1210 {
+    width: 1210px;
+  }
 }
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 html {
-    scrollbar-width: none;
+  scrollbar-width: none;
 }
-.clip {
-    @media screen and (max-width: 1280px) {
-        
-        clip-path: polygon(0 25%, 100% 25%, 100% 100%, 0% 100%);
-    }
-    @media screen  and (min-width:1280px){
-        clip-path: none!important;
-    }
+
+.slider-list::-webkit-scrollbar {
+  display: none;
 }
-navbar
+@layer components {
+  .btn {
+  @apply   flex
+  items-center
+  justify-center
+  rounded-2xl
+  px-8
+  py-4
+  font-Inter
+  text-lg
+  font-semibold
+  text-white
+  xl:px-10
+  xl:py-6
+
+};
+.margin-section {
+ @apply mt-20 sm:mt-28  md:mt-32 xl:mt-40;
+}
+.font-style {
+  @apply text-3xl sm:text-3xlp md:text-5xl xl:text-6xl xsm:text-2xl;
+}
+}
