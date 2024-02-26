@@ -1,4 +1,4 @@
-export function slider(){
+ function slider(){
   const sliderContent = document.querySelector(".slider-list");
   const slideButtons = document.querySelectorAll(".slide-button");
   const maxScroll = sliderContent.scrollWidth - sliderContent.clientWidth;
@@ -10,4 +10,6 @@ export function slider(){
       sliderContent.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
   });
+
 }
+slider();

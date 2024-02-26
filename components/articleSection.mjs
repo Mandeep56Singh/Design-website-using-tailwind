@@ -1,4 +1,4 @@
-export function createArticleContainer() {
+ function createArticleContainer() {
   const articleNews = document.querySelector(".article-news");
   const title = ["Kitchan Design", "Living Design", "Interior Designing"];
   const description = [
@@ -69,5 +69,6 @@ export function createArticleContainer() {
 
     articleNews.appendChild(elementi);
   }
+  return articleNews;
 }
-
+createArticleContainer();

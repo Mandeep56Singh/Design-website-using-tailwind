@@ -1,24 +1,20 @@
-export function createBanner() 
-{
+export function createBanner() {
+  document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.querySelector(".banner");
+    if (!banner) {
+      console.error("Banner element not found.");
+      return;
+    }
 
-    const banner = document.querySelector('.banner');
     const title = banner.textContent;
-     const links = [
-    "/index.html",
-   "/views/about.html",
-   "/views/service.html",
-];
-    const images = [
-                        "bg-About-Us-img", 
-                        "bg-services-img",
-                    ];
+    const links = ["/index.html", "/views/about.html", "/views/service.html"];
+    const images = ["bg-About-Us-img", "bg-services-img"];
 
-    let image ;
-    if(window.location.pathname === links[1] )
-    {
-        image = images[0];
-    } else if (window.location.pathname === links[2]){
-        image = images[1];
+    let image;
+    if (window.location.pathname === links[1]) {
+      image = images[0];
+    } else if (window.location.pathname === links[2]) {
+      image = images[1];
     }
     console.log(title);
     banner.classList.add("mt-6", "sm:mt-10", "md:mt-12", "xl:mt-16");
@@ -38,5 +34,5 @@ export function createBanner()
         </div>
       </div>
     `;
-    return banner;
+  });
 }
