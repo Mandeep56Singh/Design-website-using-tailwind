@@ -2,7 +2,7 @@ function createJionUsSection() {
     const jionUsSection = document.querySelector(".jion-us-section");
     jionUsSection.innerHTML = `
      <div
-      class="margin-section relative xl:right-[88px]  flex h-[430px] w-screen flex-col items-center justify-center overflow-hidden bg-center bg-no-repeat sm:pt-20 "
+      class="margin-section relative   flex h-[430px] w-screen flex-col items-center justify-center overflow-hidden bg-center bg-no-repeat sm:pt-20 "
       style="background-image: url('/assets/images/backgrounds/Rectangle 10.png')"
     >
       <div
