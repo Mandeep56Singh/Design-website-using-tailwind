@@ -4,6 +4,7 @@ export function createHeader() {
     "/index.html",
    "/views/about.html",
    "/views/service.html",
+   "/views/products.html",
 ];
 
   header.innerHTML = `
@@ -32,7 +33,7 @@ export function createHeader() {
           <li class="font-Jost text-xl font-medium">
             <a href="${links[2]}">Services</a>
           </li>
-          <li class="font-Jost text-xl font-medium"><a href="#">Project</a></li>
+          <li class="font-Jost text-xl font-medium"><a href="${links[3]}">Project</a></li>
           <li class="font-Jost text-xl font-medium"><a href="#">Blog</a></li>
           <li class="font-Jost text-xl font-medium"><a href="#">Contact</a></li>
         </ul>

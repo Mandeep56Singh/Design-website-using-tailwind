@@ -7,15 +7,26 @@ export function createBanner() {
     }
 
     const title = banner.textContent;
-    const links = ["/index.html", "/views/about.html", "/views/service.html"];
-    const images = ["bg-About-Us-img", "bg-services-img"];
+    const links = [
+      "/index.html",
+      "/views/about.html",
+      "/views/service.html",
+      "/views/products.html",
+    ];
+    const images = ["bg-About-Us-img", "bg-services-img", "bg-products-img"];
 
     let image;
-    if (window.location.pathname === links[1]) {
+    const currentPage = window.location.pathname;
+    if (currentPage === links[1]) {
       image = images[0];
-    } else if (window.location.pathname === links[2]) {
+    } else if (currentPage === links[2]) {
       image = images[1];
+    } 
+    else if (window.location.pathname === links[3]) {
+      console.log(currentPage)
+      image = images[2];
     }
+
     console.log(title);
     banner.classList.add("mt-6", "sm:mt-10", "md:mt-12", "xl:mt-16");
 

@@ -6,6 +6,7 @@ export default {
     "./*.html",
     "./views/*.html",
     "./components/*.mjs",
+    "./components/*.js",
     "./*js",
     "./*.css",
   ],
@@ -41,8 +42,10 @@ export default {
         "hero-image": "url('/assets/images/backgrounds/Rectangle 1.png')",
         workFrame1: "url('assets/images/backgrounds/Frame 2.png')",
         "About-Us-img": "url('assets/images/backgrounds/Rectangle 11.png')",
+        "products-img": "url('assets/images/backgrounds/Rectangle 26.png')",
         "services-img": "url('assets/images/backgrounds/Rectangle 20.png')",
       },
+   
       screens: {
         xsm: { min: "320px", max: "359px" },
       },
