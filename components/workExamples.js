@@ -20,12 +20,13 @@ function createWorkExamples() {
 
   const example = document.createElement("div");
   let direction = "sm:flex-row";
+
   let left = "left-3/4";
-  if(i%2 != 0) {
-   direction = "sm:flex-row-reverse";
-   left = "0"
-   console.log("executed for " , i)
-  }
+    if (i % 2 != 0) {
+      left = "0";
+      direction = "sm:flex-row-reverse";
+    } 
+  
 
   example.classList.add(
     "mx-1",
@@ -35,6 +36,7 @@ function createWorkExamples() {
     "justify-center",
     "gap-4",
     "overflow-hidden",
+    "sm:flex",
     "sm:mt-16",
     direction,
     "sm:gap-4",
@@ -90,3 +92,100 @@ function createWorkExamples() {
  }
 }
 createWorkExamples();
+
+
+// reference to element created in html , use if js failed
+
+
+/*
+<!-- 
+      <div
+        class="mx-1 mt-8 flex flex-col justify-center gap-4 overflow-hidden sm:mt-16 sm:flex-row sm:gap-4 md:gap-20 md:mt-20 lg:gap-24 lg:mt-44"
+      >
+       
+        <img
+          src="/assets/images/backgrounds/Rectangle 21.png"
+          class="hidden w-[250px] object-contain sm:block md:w-[300px] lg:w-[480px] xl:w-[625px] xl:h-[485px]"
+        />
+        <div
+          class="h-[120px] w-screen bg-orange-light bg-cover bg-center bg-no-repeat sm:hidden"
+          style="
+            background-image: url(/assets/images/backgrounds/Rectangle\ 21.png);
+          "
+        >
+          <div class="h-[120px] w-full bg-black-default bg-opacity-50">
+             <h1
+            class="relative left-2/3 font-DM-serif-Display text-[90px] text-orange-bright  "
+          >
+            01
+          </h1>
+          </div>
+        </div>
+
+        <div
+          class="mx-auto w-[320px] rounded-3xl bg-transparent p-4 sm:static sm:mx-0 xsm:w-[280px] xsm:pl-2"
+        >
+          <h1
+            class="relative left-3/4 font-DM-serif-Display text-[90px] text-orange-bright sm:text-5xl md:text-7xl lg:text-[90px] hidden sm:block"
+          >
+            01
+          </h1>
+          <div class="mt-2 sm:mt-4 lg:mt-24 xl:mt-[150px]">
+            <h1
+              class="font-DM-serif-Display text-2xlp text-black-dark md:text-4xl "
+            >
+              Concept & Details
+            </h1>
+            <p
+              class="font-Jost text-lg text-black-light sm:text-xl md:text-xlp"
+            >
+              our interior design website offers expert guidance and inspiration
+              for creating stylish and functional environments.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mx-1 mt-8 flex flex-col justify-center gap-4 overflow-hidden sm:mt-16 sm:flex-row-reverse sm:gap-4 md:gap-20 md:mt-20 lg:gap-24 lg:mt-44"
+      >
+       
+        <img
+          src="/assets/images/backgrounds/Rectangle 21.png"
+          class="hidden w-[250px] object-contain sm:block md:w-[300px] lg:w-[480px] xl:w-[625px] xl:h-[485px]"
+        />
+        <div
+          class="h-[120px] w-screen bg-orange-light bg-cover bg-center bg-no-repeat sm:hidden"
+          style="
+            background-image: url(/assets/images/backgrounds/Rectangle\ 21.png);
+          "
+        >
+          <div class="h-[120px] w-full bg-black-default bg-opacity-50"></div>
+        </div>
+
+        <div
+          class="relative -top-40 mx-auto w-[320px] rounded-3xl bg-transparent p-4 sm:static sm:mx-0 xsm:w-[280px] xsm:pl-2"
+        >
+          <h1
+            class="relative left-3/4 font-DM-serif-Display text-[90px] text-orange-bright sm:text-5xl md:text-7xl lg:text-[90px]"
+          >
+            01
+          </h1>
+          <div class="mt-2 sm:mt-4 lg:mt-24 xl:mt-[150px]">
+            <h1
+              class="font-DM-serif-Display text-2xlp text-black-dark md:text-4xl"
+            >
+              Concept & Details
+            </h1>
+            <p
+              class="font-Jost text-lg text-black-light sm:text-xl md:text-xlp"
+            >
+              our interior design website offers expert guidance and inspiration
+              for creating stylish and functional environments.
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+
+*/
