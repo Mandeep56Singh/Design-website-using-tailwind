@@ -45,6 +45,7 @@ export default {
         "About-Us-img": "url('assets/images/backgrounds/Rectangle 11.png')",
         "products-img": "url('assets/images/backgrounds/Rectangle 26.png')",
         "services-img": "url('assets/images/backgrounds/Rectangle 20.png')",
+        "contact-img": "url('assets/images/backgrounds/Rectangle 33.png')",
       },
    
       screens: {
