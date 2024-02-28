@@ -4,7 +4,7 @@ export function createHeader() {
     "/index.html",
    "/views/about.html",
    "/views/service.html",
-   "/views/products.html",
+   "/views/projects.html",
 ];
 
   header.innerHTML = `

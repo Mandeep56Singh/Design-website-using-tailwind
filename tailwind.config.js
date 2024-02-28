@@ -17,6 +17,7 @@ export default {
           default: "#000000",
           dark: "#292F36",
           light: "#4D5053",
+          lighest : "#F4F0EC",
         },
         orange: {
           bright: "#C76904",

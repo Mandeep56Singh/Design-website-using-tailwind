@@ -13,6 +13,9 @@
     width: 1210px;
   }
 }
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
 body::-webkit-scrollbar {
   display: none;
 }

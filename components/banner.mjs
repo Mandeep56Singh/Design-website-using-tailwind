@@ -11,7 +11,7 @@ export function createBanner() {
       "/index.html",
       "/views/about.html",
       "/views/service.html",
-      "/views/products.html",
+      "/views/projects.html",
     ];
     const images = ["bg-About-Us-img", "bg-services-img", "bg-products-img"];
 
