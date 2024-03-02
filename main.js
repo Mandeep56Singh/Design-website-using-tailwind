@@ -23,18 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // page transitions
- const link = document.querySelectorAll(".link");
-
- // Iterate over each link element and add an event listener to it
- link.forEach((li) => {
-   li.addEventListener("click", transformPage);
- });
 
 
-  function transformPage() {
-    pageTransition();
-    delay(1500);
-  }
+
   function pageTransition() {
     let tl = gsap.timeline();
     tl.to("ul.transition li", {
@@ -72,6 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
            pageTransition();
            await delay(1500);
            done();
+         },
+         async beforeEnter(data) {
+          return createHeader();
          },
          
        },
