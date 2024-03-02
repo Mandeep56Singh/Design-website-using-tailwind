@@ -63,7 +63,7 @@ html {
       display: flex;
     }
     .transition li {
-     background-color: wheat;
+     background-color: white;
      list-style: none;
      transform: scaleY(0);
      width: 20%;

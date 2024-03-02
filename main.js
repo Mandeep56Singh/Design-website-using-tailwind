@@ -62,21 +62,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //  barba.init({
-  //    sync: true,
-  //    transitions: [
-  //      {
-  //        async leave(data) {
-  //          const done = this.async();
+   barba.init({
+     sync: true,
+     transitions: [
+       {
+         async leave(data) {
+           const done = this.async();
 
-  //          pageTransition();
-  //          await delay(1500);
-  //          done();
-  //        },
+           pageTransition();
+           await delay(1500);
+           done();
+         },
          
-  //      },
-  //    ],
-  //  });
+       },
+     ],
+   });
 
 
 
