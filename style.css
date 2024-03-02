@@ -49,3 +49,23 @@ html {
   @apply text-3xl sm:text-3xlp md:text-5xl xl:text-6xl xsm:text-2xl;
 }
 }
+
+/* Page transitions */
+
+.transition {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      z-index: 99;
+      pointer-events: none;
+      display: flex;
+    }
+    .transition li {
+     background-color: wheat;
+     list-style: none;
+     transform: scaleY(0);
+     width: 20%;
+     height: 100vh;
+    }

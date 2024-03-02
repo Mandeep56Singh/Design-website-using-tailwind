@@ -1,4 +1,4 @@
-export function createBanner() {
+ function createBanner() {
   document.addEventListener("DOMContentLoaded", function () {
     const banner = document.querySelector(".banner");
     if (!banner) {
@@ -53,3 +53,4 @@ export function createBanner() {
     `;
   });
 }
+createBanner();

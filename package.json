@@ -16,5 +16,9 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.12.5"
   }
 }
