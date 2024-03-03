@@ -27,8 +27,15 @@ html {
   display: none;
 }
 @layer components {
-  .btn {
-  @apply   flex
+ 
+.margin-section {
+ @apply mt-20 sm:mt-28  md:mt-32 xl:mt-40;
+}
+.font-style {
+  @apply text-3xl sm:text-3xlp md:text-5xl xl:text-6xl xsm:text-2xl;
+}
+.button-black {
+   @apply   flex
   items-center
   justify-center
   rounded-2xl
@@ -40,13 +47,22 @@ html {
   text-white
   xl:px-10
   xl:py-6
-
-};
-.margin-section {
- @apply mt-20 sm:mt-28  md:mt-32 xl:mt-40;
+  bg-black-dark
 }
-.font-style {
-  @apply text-3xl sm:text-3xlp md:text-5xl xl:text-6xl xsm:text-2xl;
+.button-orange {
+   @apply   flex
+  items-center
+  justify-center
+  rounded-2xl
+  px-8
+  py-4
+  font-Inter
+  text-lg
+  font-semibold
+  text-white
+  xl:px-10
+  xl:py-6
+ bg-orange-light
 }
 }
 /* Page transitions */
