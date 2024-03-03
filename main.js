@@ -68,7 +68,7 @@ function enableHeaderLinks() {
            const done = this.async();
 
            pageTransition();
-           await delay(1500);
+           await delay(1000);
            done();
          },
          async beforeLeave(data) {
