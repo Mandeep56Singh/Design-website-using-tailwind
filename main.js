@@ -23,7 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // page transitions
+function disableHeaderLinks() {
+  const headerLinks = document.querySelectorAll("header a");
+  headerLinks.forEach((link) => {
+    link.classList.add("pointer-events-none");
+  });
+}
 
+function enableHeaderLinks() {
+  const headerLinks = document.querySelectorAll("header a");
+  headerLinks.forEach((link) => {
+    link.classList.remove("pointer-events-none");
+  });
+}
 
 
   function pageTransition() {
@@ -45,14 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: 0.1,
     });
   }
-  function delay(n) {
-    return new Promise((done) => {
-      setTimeout(() => {
-        done();
-      }, n);
-    });
-  }
-
+ async function delay(n) {
+   disableHeaderLinks(); // Disable header links before the delay
+   await new Promise((resolve) => setTimeout(resolve, n));
+   enableHeaderLinks(); // Enable header links after the delay
+ }
+ 
    barba.init({
      sync: true,
      transitions: [
@@ -64,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
            await delay(1500);
            done();
          },
-         async beforeEnter(data) {
+         async beforeLeave(data) {
           return createHeader();
          },
          
