@@ -64,9 +64,7 @@ html {
   xl:py-6
  bg-orange-light
 }
-.btn-img {
-  @apply greyscale-100 ml-3 brightness-0 invert filter
-}
+
 }
 /* Page transitions */
 

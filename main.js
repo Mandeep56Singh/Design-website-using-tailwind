@@ -1,5 +1,4 @@
 
-import { createButton } from "./components/buttonElement.mjs";
 import { createFooter } from "./components/footer.mjs";
 import { createHeader } from "./components/header.mjs";
 import gsap from "gsap";
@@ -15,8 +14,6 @@ const currentPage = window.location.pathname;
 document.addEventListener("DOMContentLoaded", () => {
   createFooter();
   createHeader();
-  createButton("button-black", "#292F36", "../assets/images/icons/arrow.png");
-  createButton("button-orange", "#CDA274", "../assets/images/icons/arrow.png");
  
 });
 
