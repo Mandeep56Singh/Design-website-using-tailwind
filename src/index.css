@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+@layer utilities {
+  .w-1210 {
+    width: 1210px;
+  }
+}
+.slider-list::-webkit-scrollbar {
+  display: none;
+}
+section {
+ @apply mt-20 sm:mt-28  md:mt-32 xl:mt-40 max-w-[1210px] mx-auto;
+}
+.font-style {
+  @apply text-3xl sm:text-3xlp md:text-5xl xl:text-6xl xsm:text-2xl;
+}
+.transition {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      z-index: 99;
+      pointer-events: none;
+      display: flex;
+    }
+    .transition li {
+     background-color:white;
+     list-style: none;
+     transform: scaleY(0);
+     width: 20%;
+     height: 100vh;
+    }
+    

@@ -1,15 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  mode: "jit",
-
-  content: [
-    "./*.html",
-    "./views/*.html",
-    "./components/*.mjs",
-    "./components/*.js",
-    "./*js",
-    "./*.css",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -17,7 +8,7 @@ export default {
           default: "#000000",
           dark: "#292F36",
           light: "#4D5053",
-          lighest : "#F4F0EC",
+          lighest: "#F4F0EC",
         },
         orange: {
           bright: "#C76904",
@@ -40,14 +31,14 @@ export default {
         "7xlp": ["5.313rem", "6.625rem"],
       },
       backgroundImage: {
-        "hero-image": "url('/assets/images/backgrounds/Rectangle 1.png')",
-        workFrame1: "url('assets/images/backgrounds/Frame 2.png')",
-        "About-Us-img": "url('assets/images/backgrounds/Rectangle 11.png')",
-        "products-img": "url('assets/images/backgrounds/Rectangle 26.png')",
-        "services-img": "url('assets/images/backgrounds/Rectangle 20.png')",
-        "contact-img": "url('assets/images/backgrounds/Rectangle 33.png')",
+        "hero-image": "url('src/assets/images/backgrounds/Rectangle 1.png')",
+        workFrame1: "url('src/assets/images/backgrounds/Frame 2.png')",
+        "About-Us-img": "url('/src/assets/images/backgrounds/Rectangle 11.png')",
+        "products-img": "url('src/assets/images/backgrounds/Rectangle 26.png')",
+        "services-img": "url('src/assets/images/backgrounds/Rectangle 20.png')",
+        "contact-img": "url('src/assets/images/backgrounds/Rectangle 33.png')",
       },
-   
+
       screens: {
         xsm: { min: "320px", max: "359px" },
       },
