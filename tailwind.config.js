@@ -33,7 +33,7 @@ export default {
       backgroundImage: {
         "hero-image": "url('src/assets/images/backgrounds/Rectangle 1.png')",
         workFrame1: "url('src/assets/images/backgrounds/Frame 2.png')",
-        "About-Us-img": "url('/src/assets/images/backgrounds/Rectangle 11.png')",
+        "About-Us-img": "url('src/assets/images/backgrounds/Rectangle 11.png')",
         "products-img": "url('src/assets/images/backgrounds/Rectangle 26.png')",
         "services-img": "url('src/assets/images/backgrounds/Rectangle 20.png')",
         "contact-img": "url('src/assets/images/backgrounds/Rectangle 33.png')",

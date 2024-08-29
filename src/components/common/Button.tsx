@@ -25,6 +25,7 @@ const buttonVariants = cva(
   },
 );
 type buttonProps = ComponentProps<"button"> &
+  // eslint-disable-next-line @typescript-eslint/ban-types
   VariantProps<typeof buttonVariants> & {};
 const Button = forwardRef<HTMLButtonElement, buttonProps>(
   ({ className, variant, size, ...props }, ref) => {
