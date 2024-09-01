@@ -27,7 +27,7 @@ export const unsplashApiSlice = createApi({
   endpoints: (builder) => ({
     getImages: builder.query<ApiResponse, getImagesTypes>({
       query: ({ category, page }) =>
-        `search/photos?query=${category} interior design&per_page=20&page=${page}&client_id=${accessKey}`,
+        `search/photos?query=${category}&per_page=20&page=${page}&client_id=${accessKey}`,
     }),
   }),
 });
