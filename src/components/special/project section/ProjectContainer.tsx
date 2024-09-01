@@ -5,6 +5,7 @@ import {
 } from "../../../redux/slices/unsplashApiSlice";
 import Tabs from "../../common/Tabs";
 import ProjectItem from "./ProjectItem";
+import CircleLoader from "../../common/CircleLoader";
 
 const ProjectContainer: React.FC = () => {
   const tabs = ["Bedroom", "Bathroom", "Kitchen", "Living Room"];
@@ -39,7 +40,7 @@ const ProjectContainer: React.FC = () => {
   };
 
   if (error) return <div>Error</div>;
-  if (isLoading && currentPage === 1) return <div>Loading...</div>;
+  if (isLoading ) return <CircleLoader></CircleLoader>
 
   return (
     <>
