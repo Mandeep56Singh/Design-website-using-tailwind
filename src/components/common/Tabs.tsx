@@ -44,7 +44,7 @@ const Tabs: React.FC<TabProps> = ({ currentTabIndex, onTabClick }) => {
   };
 
   return (
-    <div className="tabs-block relative mx-auto my-[50px] flex w-[360px] sm:w-[480px] justify-center rounded-full border border-solid border-orange-200">
+    <div className="tabs-block relative mx-auto my-[50px] flex w-[350px] sm:w-[480px] justify-center rounded-full border border-solid border-orange-200">
       <div
         className="slider absolute left-0 top-0 h-full rounded-full bg-orange-light shadow-md"
         ref={sliderRef}

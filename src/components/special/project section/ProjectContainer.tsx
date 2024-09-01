@@ -1,41 +1,69 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
+  ImageItem,
   useGetImagesQuery,
 } from "../../../redux/slices/unsplashApiSlice";
-import ProjectItem from "./ProjectItem";
 import Tabs from "../../common/Tabs";
+import ProjectItem from "./ProjectItem";
 
 const ProjectContainer: React.FC = () => {
-  const tabs = ["Bedroom", "Bathroom", "Kitchen","living room"];
+  const tabs = ["Bedroom", "Bathroom", "Kitchen", "Living Room"];
   const [currentTab, setCurrentTab] = useState<string>("Bathroom");
+  const [projects, setProjects] = useState<ImageItem[]>([]);
+  const [currentPage, setPage] = useState<number>(1);
 
   const currentTabIndex = tabs.findIndex(
     (tab) => tab.toLowerCase() === currentTab.toLowerCase()
   );
 
-  const { data: images, error, isLoading } = useGetImagesQuery(currentTab);
+  const {
+    data: images,
+    error,
+    isLoading,
+  } = useGetImagesQuery({ category: currentTab, page: currentPage });
 
-  if (error) return <div>error</div>;
-  if (isLoading) return <div>Loading...</div>;
+  useEffect(() => {
+    if (images?.results) {
+      setProjects((prevProjects) => [...prevProjects, ...images.results]);
+    }
+  }, [images]);
 
   const handleTabClick = (index: number) => {
     setCurrentTab(tabs[index]);
+    setPage(1);
+    setProjects([]);
   };
+
+  const handlePageClick = () => {
+    setPage((prevPage) => prevPage + 1);
+  };
+
+  if (error) return <div>Error</div>;
+  if (isLoading && currentPage === 1) return <div>Loading...</div>;
 
   return (
     <>
       <Tabs currentTabIndex={currentTabIndex} onTabClick={handleTabClick} />
       <section className="project-items mt-9">
         <div className="mx-auto mt-12 grid w-[340px] grid-cols-1 gap-12 sm:w-11/12 sm:grid-cols-2 sm:gap-16 xl:mt-28 xl:gap-28 xsm:w-[300px]">
-          {images?.results.map((item) => (
+          {projects.map((item) => (
             <ProjectItem
               key={item.id}
               imgSrc={`${item.urls.raw}&h=500&w=600`}
-              title={ "Image"}
-              category={ "No description"}
+              title={"Image"}
+              category={"No description"}
             />
           ))}
         </div>
+      </section>
+
+      <section className="flex justify-center">
+        <button
+          className="bg-orange-light p-4 text-white font-bold text-2xl rounded-3xl w-[340px] font-inter"
+          onClick={handlePageClick}
+        >
+          VIEW MORE
+        </button>
       </section>
     </>
   );

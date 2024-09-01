@@ -14,18 +14,21 @@ export type ApiResponse =  {
   totalPage: number;
   results: ImageItem[];
 }
-
-
+type getImagesTypes = {
+  category:string;
+  page: number;
+} 
 export const unsplashApiSlice = createApi({
   reducerPath: "unsplashApiSlice",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://api.unsplash.com/",
   }),
   endpoints: (builder) => ({
-    getImages: builder.query<ApiResponse, string>({
-      query: (category: string) =>
-        `search/photos?query=${category}&page=1&per_page=20&client_id=${accessKey}`,
+    getImages: builder.query<ApiResponse, getImagesTypes>({
+      query: ({category,page}) =>
+        `search/photos?query=${category} interior design&page=${page}&per_page=20&client_id=${accessKey}`,
     }),
+   
   }),
 });
 export const  {useGetImagesQuery} = unsplashApiSlice;
