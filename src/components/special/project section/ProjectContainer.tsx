@@ -27,7 +27,7 @@ const ProjectContainer: React.FC = () => {
       setProjects((prevProjects) => [...prevProjects, ...images.results]);
     }
   }, [images]);
-
+  console.log(images);
   const handleTabClick = (index: number) => {
     setCurrentTab(tabs[index]);
     setPage(1);
@@ -49,21 +49,25 @@ const ProjectContainer: React.FC = () => {
           {projects.map((item) => (
             <ProjectItem
               key={item.id}
-              imgSrc={`${item.urls.raw}&h=500&w=600`}
+              imgSrc={`${item.urls.raw}&h=500&w=600&q=80&fm=webp`}
               title={"Image"}
               category={"No description"}
+              blurHash={item.blur_hash}
             />
           ))}
         </div>
       </section>
 
       <section className="flex justify-center">
+        {
+       projects.length !==0  &&
         <button
           className="bg-orange-light p-4 text-white font-bold text-2xl rounded-3xl w-[340px] font-inter"
           onClick={handlePageClick}
         >
           VIEW MORE
         </button>
+        }
       </section>
     </>
   );
