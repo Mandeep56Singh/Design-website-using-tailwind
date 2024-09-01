@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 }) => {
   return (
     <div>
-      <img src={imgSrc} alt={title} />
+      <img src={imgSrc} alt={title} className="w-[500px] h-[600px] object-cover" />
 
       <div className="mt-3 flex max-w-[590px] items-center justify-between">
         <div>
