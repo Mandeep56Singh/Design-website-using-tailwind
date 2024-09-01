@@ -1,26 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  useGetImagesQuery,
+} from "../../../redux/slices/unsplashApiSlice";
 import ProjectItem from "./ProjectItem";
-import {useGetImagesQuery} from '../../../redux/slices/unsplashApiSlice'
+import Tabs from "../../common/Tabs";
 
 const ProjectContainer: React.FC = () => {
+  const tabs = ["Bedroom", "Bathroom", "Kitchen","living room"];
+  const [currentTab, setCurrentTab] = useState<string>("Bathroom");
 
-  const {data:images,error,isLoading} = useGetImagesQuery('bedroom');
-  console.log(images?.results,'got some data');
+  const currentTabIndex = tabs.findIndex(
+    (tab) => tab.toLowerCase() === currentTab.toLowerCase()
+  );
 
-if(error) return <div>error</div>
-if(isLoading) return <div>Loading...</div>
-  console.log(images,'here is iamgs');
+  const { data: images, error, isLoading } = useGetImagesQuery(currentTab);
+
+  if (error) return <div>error</div>;
+  if (isLoading) return <div>Loading...</div>;
+
+  const handleTabClick = (index: number) => {
+    setCurrentTab(tabs[index]);
+  };
+
   return (
-    <section className="project-items mt-9">
-      <div className="mx-auto mt-12 grid w-[340px] grid-cols-1 gap-12 sm:w-11/12 sm:grid-cols-2 sm:gap-16 xl:mt-28 xl:gap-28 xsm:w-[300px]">
-        {
-          images?.results.map((item) => <ProjectItem
-            key={item.id}
-            imgSrc={`${item.urls.raw}&h=500&w=600`} title={"hefase"} category={"feasfse"}          
-          ></ProjectItem>)
-        }
-      </div>
-    </section>
+    <>
+      <Tabs currentTabIndex={currentTabIndex} onTabClick={handleTabClick} />
+      <section className="project-items mt-9">
+        <div className="mx-auto mt-12 grid w-[340px] grid-cols-1 gap-12 sm:w-11/12 sm:grid-cols-2 sm:gap-16 xl:mt-28 xl:gap-28 xsm:w-[300px]">
+          {images?.results.map((item) => (
+            <ProjectItem
+              key={item.id}
+              imgSrc={`${item.urls.raw}&h=500&w=600`}
+              title={ "Image"}
+              category={ "No description"}
+            />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
