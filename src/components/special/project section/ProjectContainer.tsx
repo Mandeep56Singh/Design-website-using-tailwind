@@ -38,10 +38,16 @@ const ProjectContainer: React.FC = () => {
   const handlePageClick = () => {
     setPage((prevPage) => prevPage + 1);
   };
-
+  const descriptionModifier = (description:string) => {
+    console.log(description,'here is description')
+   if(description.length <= 25) {
+    return description;
+   }
+   return description.slice(0,25)
+  }
   if (error) return <div>Error</div>;
   if (isLoading ) return <CircleLoader></CircleLoader>
-
+ 
   return (
     <>
       <Tabs currentTabIndex={currentTabIndex} onTabClick={handleTabClick} />
@@ -52,7 +58,7 @@ const ProjectContainer: React.FC = () => {
               key={item.id}
               imgSrc={`${item.urls.raw}&h=500&w=600&q=80&fm=webp`}
               title={"Image"}
-              category={"No description"}
+              category={item?.alt_description}
               blurHash={item.blur_hash}
             />
           ))}
@@ -60,15 +66,14 @@ const ProjectContainer: React.FC = () => {
       </section>
 
       <section className="flex justify-center">
-        {
-       projects.length !==0  &&
-        <button
-          className="bg-orange-light p-4 text-white font-bold text-2xl rounded-3xl w-[340px] font-inter"
-          onClick={handlePageClick}
-        >
-          VIEW MORE
-        </button>
-        }
+        {projects.length !== 0 && (
+          <button
+            className="bg-orange-light p-4 text-white font-bold text-2xl rounded-3xl w-[340px] font-inter"
+            onClick={handlePageClick}
+          >
+            VIEW MORE
+          </button>
+        )}
       </section>
     </>
   );

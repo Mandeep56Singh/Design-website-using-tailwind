@@ -58,15 +58,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         onLoad={() => setIsLoaded(true)}
       />
 
-      <div className="mt-3 flex max-w-[590px] items-center justify-between">
-        <div>
-          <h1 className="font-DM-serif-Display text-2xl text-black-dark">
-            {title}
-          </h1>
-          <p className="font-Jost text-xlp text-black-light">{category}</p>
+      <div className="mt-3 flex max-w-[590px] items-center justify-between gap-2">
+        <div className="w-auto">
+          <p className="font-Jost text-xlp text-black-light w">{category}</p>
         </div>
 
-        <Button size="icon">
+        <Button size="icon" className="size-[60px] flex-shrink-0">
           <i className="fa-solid fa-chevron-right"></i>
         </Button>
       </div>

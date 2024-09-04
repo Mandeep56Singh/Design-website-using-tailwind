@@ -2,6 +2,7 @@ import {createApi,fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 const accessKey = import.meta.env.VITE_UNSPLASH_API_ACESS_KEY;
 // Define the type for individual image items
 export type ImageItem = {
+  alt_description: string;
   blur_hash: string;
   id: number;
   urls: {
