@@ -22,7 +22,6 @@ const ProjectContainer: React.FC = () => {
     error,
     isLoading,
   } = useGetImagesQuery({ category: currentTab, page: currentPage });
-
   useEffect(() => {
     if (images?.results) {
       setProjects((prevProjects) => [...prevProjects, ...images.results]);
@@ -36,15 +35,9 @@ const ProjectContainer: React.FC = () => {
   };
 
   const handlePageClick = () => {
+    console.log(isLoading,"loading state for button")
     setPage((prevPage) => prevPage + 1);
   };
-  const descriptionModifier = (description:string) => {
-    console.log(description,'here is description')
-   if(description.length <= 25) {
-    return description;
-   }
-   return description.slice(0,25)
-  }
   if (error) return <div>Error</div>;
   if (isLoading ) return <CircleLoader></CircleLoader>
  
